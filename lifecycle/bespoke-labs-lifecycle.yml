@@ -1,0 +1,15 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bespoke-labs-minicheck-openapi-original.json
+versioning:
+  scheme: uri-path
+  current: v0
+  note: API paths are prefixed /v0/ ; spec info.version 0.0.2 (pre-1.0, early access).
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+deprecated_operations: []
+note: No published status page, deprecation policy, or SLA was found for Bespoke Labs at enrichment time.

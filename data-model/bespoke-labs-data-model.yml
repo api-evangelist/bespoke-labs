@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bespoke-labs-minicheck-openapi-original.json
+entities:
+- name: SingleFactCheckRequest
+  fields:
+  - {name: context, type: string, required: true, description: The context to fact-check against.}
+  - {name: claim, type: string, required: true, description: The claim to be fact-checked.}
+- name: SingleFactCheckResponse
+  fields:
+  - {name: support_prob, type: number, required: true, description: Probability that the claim is supported by the context.}
+- name: HTTPValidationError
+  fields:
+  - {name: detail, type: array<ValidationError>, required: false}
+- name: ValidationError
+  fields:
+  - {name: loc, type: array<string|integer>, required: true}
+  - {name: msg, type: string, required: true}
+  - {name: type, type: string, required: true}
+relationships:
+- {from: HTTPValidationError, to: ValidationError, kind: has_many, via: detail}
+note: Stateless inference API; entities are request/response value objects with no persistent id-referenced graph.

@@ -1,8 +1,14 @@
 aid: bespoke-labs
 name: Bespoke Labs
-description: Bespoke Labs is a company surfaced as a portfolio company of 8vc, mayfield, wing-venture-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Bespoke Labs is an applied AI research lab building environment infrastructure, data
+  curation, and evaluation tooling for AI agents and post-training. Its open-source Bespoke
+  Curator library generates high-quality synthetic data at scale for model finetuning and
+  structured extraction, and its Bespoke MiniCheck ("Argus") API offers a lightweight
+  grounded-factuality / hallucination-detection service that scores whether a claim is
+  supported by a given context. The lab is also known for OpenThoughts reasoning datasets,
+  Terminal-Bench, the GEPA prompt optimizer, MiniChart, and OpenThinker. Backed by 8VC,
+  Mayfield, and Wing Venture Capital.
 url: https://raw.githubusercontent.com/api-evangelist/bespoke-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,19 +16,110 @@ x-backed-by:
 - 8vc
 - mayfield
 - wing-venture-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: active
+x-tier-reason: enriched-real-api
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://framerusercontent.com/images/3uXQTaKpkGh6gD7qAWsAwPMhk.png
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- LLM
+- Synthetic Data
+- Data Curation
+- Fact Checking
+- Hallucination Detection
+- AI Agents
+- Evaluation
+apis:
+- aid: bespoke-labs:bespoke-labs-minicheck-api
+  name: Bespoke Labs Minicheck API
+  description: The Minicheck API from Bespoke Labs — 1 operation(s) for minicheck.
+  humanURL: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
+  baseURL: https://api.bespokelabs.ai
+  tags:
+  - Minicheck
+  properties:
+  - type: OpenAPI
+    url: openapi/bespoke-labs-minicheck-api-openapi.yml
+  - type: Documentation
+    url: https://docs.bespokelabs.ai/models/bespoke-minicheck.md
+  - type: APIReference
+    url: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgenticAccess
+  url: agentic-access/bespoke-labs-agentic-access.yml
+- type: Authentication
+  url: authentication/bespoke-labs-authentication.yml
+- type: DomainSecurity
+  url: security/bespoke-labs-domain-security.yml
+- type: Packages
+  url: packages/bespoke-labs-packages.yml
+- type: SDKs
+  url: packages/bespoke-labs-packages.yml
+- type: WellKnown
+  url: well-known/bespoke-labs-well-known.yml
+- type: MCPServer
+  url: mcp/bespoke-labs-mcp.yml
+- type: LLMsTxt
+  url: llms/bespoke-labs-llms.txt
+- type: Conformance
+  url: conformance/bespoke-labs-conformance.yml
+- type: ErrorCatalog
+  url: errors/bespoke-labs-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/bespoke-labs-lifecycle.yml
+- type: Conventions
+  url: conventions/bespoke-labs-conventions.yml
+- type: DataModel
+  url: data-model/bespoke-labs-data-model.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DeveloperPortal
+  url: https://docs.bespokelabs.ai
+- type: Documentation
+  url: https://docs.bespokelabs.ai
+- type: APIReference
+  url: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
+- type: GettingStarted
+  url: https://docs.bespokelabs.ai/bespoke-curator/getting-started
+- type: SignUp
+  url: https://console.bespokelabs.ai
+- type: Support
+  url: https://bespokelabs.ai/contact
+- type: Community
+  url: https://discord.com/invite/KqpXvpzVBS
+- type: Blog
+  url: https://bespokelabs.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/bespokelabsai
+- type: TermsOfService
+  url: https://bespokelabs.ai/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://bespokelabs.ai/legal/privacy-policy
 - type: Website
   url: https://bespokelabs.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

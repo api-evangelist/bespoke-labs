@@ -1,0 +1,14 @@
+{
+  "provider": "bespoke-labs",
+  "sources": [
+    "bespoke-labs-minicheck-api-openapi.yml"
+  ],
+  "outputs": [
+    "bespoke-labs-minicheck-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

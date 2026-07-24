@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bespoke-labs-minicheck-openapi-original.json
+format: custom
+envelope:
+  schema: HTTPValidationError
+  content_type: application/json
+  shape: '{ detail: [ { loc: [string|int], msg: string, type: string } ] }'
+  note: FastAPI-style validation error envelope; not RFC 9457 problem+json.
+problems:
+- status: 422
+  title: Validation Error
+  schema: HTTPValidationError
+  source_operation: openapi/bespoke-labs-minicheck-openapi-original.json#factcheck_single_context_v0_factcheck_post

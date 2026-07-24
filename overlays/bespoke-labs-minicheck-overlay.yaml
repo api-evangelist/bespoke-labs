@@ -1,0 +1,24 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Bespoke Labs MiniCheck (Argus)
+  version: 1.0.0
+extends: openapi/bespoke-labs-minicheck-openapi-original.json
+actions:
+- target: $.info
+  update:
+    x-apievangelist-rating: 3
+    x-provider: Bespoke Labs
+    x-product: Bespoke MiniCheck
+- target: $
+  update:
+    servers:
+    - url: https://api.bespokelabs.ai
+      description: Bespoke Labs production API (base_url used by the official SDK).
+- target: $.paths['/v0/minicheck/factcheck'].post
+  update:
+    tags:
+    - MiniCheck
+    description: >-
+      Grounded factuality check. Given a claim and a context, returns support_prob,
+      the probability that the claim is supported by the context. Powered by the
+      Bespoke-MiniCheck 7B grounded-factuality model.

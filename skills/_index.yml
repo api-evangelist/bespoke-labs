@@ -1,0 +1,7 @@
+generated: '2026-07-18'
+method: generated
+skills:
+- file: bespoke-labs-factcheck.md
+  name: Fact-check a claim with Bespoke MiniCheck
+  api: openapi/bespoke-labs-minicheck-openapi-original.json
+  operations: [factcheck_single_context_v0_factcheck_post]

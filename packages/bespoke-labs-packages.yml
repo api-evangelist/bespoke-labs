@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/bespokelabs/ , https://pypi.org/project/bespokelabs-curator/
+packages:
+- language: python
+  registry: pypi
+  name: bespokelabs
+  version: 0.2.3
+  url: https://pypi.org/project/bespokelabs/
+  install: pip install bespokelabs
+  repo: https://github.com/bespokelabsai/bespokelabs-python
+  summary: The official Python library for the Bespoke Labs (MiniCheck / Argus) API.
+  official: true
+- language: python
+  registry: pypi
+  name: bespokelabs-curator
+  version: 0.1.29
+  url: https://pypi.org/project/bespokelabs-curator/
+  install: pip install bespokelabs-curator
+  repo: https://github.com/bespokelabsai/curator
+  summary: Bespoke Curator — synthetic data curation for post-training and structured data extraction.
+  official: true

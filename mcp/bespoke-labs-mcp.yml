@@ -1,0 +1,13 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: openapi/bespoke-labs-minicheck-openapi-original.json
+note: No official hosted/remote MCP server was found for Bespoke Labs. This is a candidate
+  tool list derived one-to-one from the published MiniCheck (Argus) OpenAPI operations.
+server:
+  name: bespoke-labs
+  transport: http
+tools:
+- name: factcheck
+  description: Fact-check a single claim against a context; returns the probability the claim is supported.
+  source_operation: openapi/bespoke-labs-minicheck-openapi-original.json#factcheck_single_context_v0_factcheck_post

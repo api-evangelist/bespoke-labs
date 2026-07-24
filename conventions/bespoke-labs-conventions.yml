@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/bespoke-labs-minicheck-openapi-original.json , https://docs.bespokelabs.ai/models/bespoke-minicheck/api.md
+base_url: https://api.bespokelabs.ai
+authentication:
+  style: api-key
+  location: header
+  parameter: api_key
+  sdk_env_var: BESPOKE_API_KEY
+  console: https://console.bespokelabs.ai
+  see: authentication/bespoke-labs-authentication.yml
+idempotency:
+  supported: false
+  note: No idempotency-key header or parameter is documented or present in the OpenAPI.
+pagination:
+  supported: false
+  note: Single stateless inference operation; no collection endpoints.
+versioning:
+  style: uri-path
+  current: v0
+  see: lifecycle/bespoke-labs-lifecycle.yml
+error_envelope:
+  shape: FastAPI HTTPValidationError (detail[] of loc/msg/type)
+  content_type: application/json
+  see: errors/bespoke-labs-problem-types.yml
+rate_limiting:
+  signaled: unknown
+  note: No rate-limit headers or limits are documented in the public spec/docs.
+request_tracing:
+  request_id_header: unknown

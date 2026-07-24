@@ -1,0 +1,139 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Argus",
+    "summary": "Check your LLM responses",
+    "version": "0.0.2"
+  },
+  "security": [
+    {
+      "APIKeyHeader": []
+    }
+  ],
+  "paths": {
+    "/v0/minicheck/factcheck": {
+      "post": {
+        "summary": "Factcheck Single Context",
+        "operationId": "factcheck_single_context_v0_factcheck_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SingleFactCheckRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleFactCheckResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SingleFactCheckRequest": {
+        "properties": {
+          "context": {
+            "type": "string",
+            "title": "Context",
+            "description": "The context to fact-check against."
+          },
+          "claim": {
+            "type": "string",
+            "title": "Claim",
+            "description": "The claim to be fact-checked."
+          }
+        },
+        "type": "object",
+        "required": ["context", "claim"],
+        "title": "SingleFactCheckRequest"
+      },
+      "SingleFactCheckResponse": {
+        "properties": {
+          "support_prob": {
+            "type": "number",
+            "title": "Probability that the claim is supported by the context."
+          }
+        },
+        "type": "object",
+        "required": ["support_prob"],
+        "title": "SingleFactCheckResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": ["loc", "msg", "type"],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "api_key"
+      }
+    }
+  }
+}
