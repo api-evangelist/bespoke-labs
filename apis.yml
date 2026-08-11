@@ -66,6 +66,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Overlay
+  url: overlays/bespoke-labs-minicheck-overlay.yaml
 - type: AgenticAccess
   url: agentic-access/bespoke-labs-agentic-access.yml
 - type: Authentication
