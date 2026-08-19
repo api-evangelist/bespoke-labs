@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Argus Minicheck API",
+    "version": "0.0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Minicheck",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Factcheck Single Context",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v0/minicheck/factcheck",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "apikey",
+              "key": "api_key",
+              "value": "{{api_key}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Factcheck Single Context"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
