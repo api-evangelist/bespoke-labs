@@ -47,6 +47,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://framerusercontent.com/images/3uXQTaKpkGh6gD7qAWsAwPMhk.png
+x-docs-platform: gitbook
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-20
 tags:
 - Company
 - Artificial Intelligence
