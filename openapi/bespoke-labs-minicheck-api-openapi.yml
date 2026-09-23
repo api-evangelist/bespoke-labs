@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Argus Minicheck API
   summary: Check your LLM responses
@@ -37,15 +37,6 @@ paths:
       - Minicheck
 components:
   schemas:
-    SingleFactCheckResponse:
-      properties:
-        support_prob:
-          type: number
-          title: Probability that the claim is supported by the context.
-      type: object
-      required:
-      - support_prob
-      title: SingleFactCheckResponse
     ValidationError:
       properties:
         loc:
@@ -67,6 +58,24 @@ components:
       - msg
       - type
       title: ValidationError
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    SingleFactCheckResponse:
+      properties:
+        support_prob:
+          type: number
+          title: Probability that the claim is supported by the context.
+      type: object
+      required:
+      - support_prob
+      title: SingleFactCheckResponse
     SingleFactCheckRequest:
       properties:
         context:
@@ -82,15 +91,6 @@ components:
       - context
       - claim
       title: SingleFactCheckRequest
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
   securitySchemes:
     APIKeyHeader:
       type: apiKey

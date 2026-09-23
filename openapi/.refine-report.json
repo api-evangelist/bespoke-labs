@@ -1,7 +1,7 @@
 {
   "provider": "bespoke-labs",
   "sources": [
-    "bespoke-labs-minicheck-api-openapi.yml"
+    "_original/bespoke-labs-minicheck-openapi-original.json"
   ],
   "outputs": [
     "bespoke-labs-minicheck-api-openapi.yml"
@@ -9,6 +9,14 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "bespoke-labs-minicheck-openapi-original.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "bespoke-labs-minicheck-openapi-original.json: tagged paths POST /v0/minicheck/factcheck -> Minicheck",
+    "bespoke-labs-minicheck-openapi-original.json: declared missing tag: Minicheck",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "bespoke-labs-minicheck-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
