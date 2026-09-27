@@ -53,7 +53,7 @@ x-docs-platform-checked: 2026-09-20
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - LLM
 - Synthetic Data
 - Data Curation
@@ -72,6 +72,7 @@ tags_raw:
 - Hallucination Detection
 - AI Agents
 - Evaluation
+- Machine-Learning
 apis:
 - aid: bespoke-labs:bespoke-labs-minicheck-api
   name: Bespoke Labs Minicheck API
