@@ -37,15 +37,6 @@ paths:
       - Minicheck
 components:
   schemas:
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
     SingleFactCheckRequest:
       properties:
         context:
@@ -61,6 +52,15 @@ components:
       - context
       - claim
       title: SingleFactCheckRequest
+    SingleFactCheckResponse:
+      properties:
+        support_prob:
+          type: number
+          title: Probability that the claim is supported by the context.
+      type: object
+      required:
+      - support_prob
+      title: SingleFactCheckResponse
     ValidationError:
       properties:
         loc:
@@ -82,15 +82,15 @@ components:
       - msg
       - type
       title: ValidationError
-    SingleFactCheckResponse:
+    HTTPValidationError:
       properties:
-        support_prob:
-          type: number
-          title: Probability that the claim is supported by the context.
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
       type: object
-      required:
-      - support_prob
-      title: SingleFactCheckResponse
+      title: HTTPValidationError
   securitySchemes:
     APIKeyHeader:
       type: apiKey
