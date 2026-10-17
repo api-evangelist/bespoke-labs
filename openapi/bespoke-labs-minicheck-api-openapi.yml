@@ -37,30 +37,6 @@ paths:
       - Minicheck
 components:
   schemas:
-    SingleFactCheckRequest:
-      properties:
-        context:
-          type: string
-          title: Context
-          description: The context to fact-check against.
-        claim:
-          type: string
-          title: Claim
-          description: The claim to be fact-checked.
-      type: object
-      required:
-      - context
-      - claim
-      title: SingleFactCheckRequest
-    SingleFactCheckResponse:
-      properties:
-        support_prob:
-          type: number
-          title: Probability that the claim is supported by the context.
-      type: object
-      required:
-      - support_prob
-      title: SingleFactCheckResponse
     ValidationError:
       properties:
         loc:
@@ -91,6 +67,30 @@ components:
           title: Detail
       type: object
       title: HTTPValidationError
+    SingleFactCheckResponse:
+      properties:
+        support_prob:
+          type: number
+          title: Probability that the claim is supported by the context.
+      type: object
+      required:
+      - support_prob
+      title: SingleFactCheckResponse
+    SingleFactCheckRequest:
+      properties:
+        context:
+          type: string
+          title: Context
+          description: The context to fact-check against.
+        claim:
+          type: string
+          title: Claim
+          description: The claim to be fact-checked.
+      type: object
+      required:
+      - context
+      - claim
+      title: SingleFactCheckRequest
   securitySchemes:
     APIKeyHeader:
       type: apiKey
