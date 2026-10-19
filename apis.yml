@@ -74,16 +74,30 @@ tags_raw:
 - Evaluation
 - Machine-Learning
 apis:
-- aid: bespoke-labs:bespoke-labs-minicheck-api
-  name: Bespoke Labs Minicheck API
-  description: The Minicheck API from Bespoke Labs — 1 operation(s) for minicheck.
+- aid: bespoke-labs:bespoke-labs-nimble-api
+  name: Bespoke Labs Nimble API
+  description: The Nimble API from Bespoke Labs — 1 operation(s) for nimble.
   humanURL: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
   baseURL: https://api.bespokelabs.ai
   tags:
-  - Minicheck
+  - Nimble
   properties:
   - type: OpenAPI
-    url: openapi/bespoke-labs-minicheck-api-openapi.yml
+    url: openapi/bespoke-labs-nimble-api-openapi.yml
+  - type: Documentation
+    url: https://docs.bespokelabs.ai/models/bespoke-minicheck.md
+  - type: APIReference
+    url: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
+- aid: bespoke-labs:bespoke-labs-viewer-api
+  name: Bespoke Labs Viewer API
+  description: The Viewer API from Bespoke Labs — 4 operation(s) for viewer.
+  humanURL: https://docs.bespokelabs.ai/models/bespoke-minicheck/api
+  baseURL: https://api.bespokelabs.ai
+  tags:
+  - Viewer
+  properties:
+  - type: OpenAPI
+    url: openapi/bespoke-labs-viewer-api-openapi.yml
   - type: Documentation
     url: https://docs.bespokelabs.ai/models/bespoke-minicheck.md
   - type: APIReference

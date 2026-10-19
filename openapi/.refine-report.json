@@ -1,22 +1,26 @@
 {
   "provider": "bespoke-labs",
   "sources": [
-    "_original/bespoke-labs-minicheck-openapi-original.json"
+    "_original/bespoke-labs-openapi.json"
   ],
   "outputs": [
-    "bespoke-labs-minicheck-api-openapi.yml"
+    "bespoke-labs-nimble-api-openapi.yml",
+    "bespoke-labs-viewer-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
     "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
-    "bespoke-labs-minicheck-openapi-original.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "bespoke-labs-minicheck-openapi-original.json: tagged paths POST /v0/minicheck/factcheck -> Minicheck",
-    "bespoke-labs-minicheck-openapi-original.json: declared missing tag: Minicheck",
-    "apis.yml register: already-registered"
+    "bespoke-labs-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "bespoke-labs-openapi.json: tagged paths POST /v1/nimble/systemone -> Nimble",
+    "bespoke-labs-openapi.json: tagged paths POST /v0/viewer/sessions -> Viewer",
+    "bespoke-labs-openapi.json: tagged paths PUT /v0/viewer/sessions/{session_id} -> Viewer",
+    "bespoke-labs-openapi.json: tagged paths POST /v0/viewer/sessions/{session_id}/responses/{idx} -> Viewer",
+    "bespoke-labs-openapi.json: tagged paths GET /v0/viewer/sessions/{session_id}/fetch_data -> Viewer",
+    "bespoke-labs-openapi.json: declared missing tag: Nimble",
+    "bespoke-labs-openapi.json: declared missing tag: Viewer",
+    "apis.yml register: written (+2 apis, 2 total)"
   ],
-  "skipped": [
-    "bespoke-labs-minicheck-api-openapi.yml: previously refined output, superseded by openapi/_original/"
-  ]
+  "skipped": []
 }

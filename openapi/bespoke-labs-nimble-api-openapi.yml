@@ -1,0 +1,81 @@
+openapi: 3.2.0
+info:
+  title: Bespoke Labs Nimble API
+  version: 0.0.2
+tags:
+- name: Nimble
+paths:
+  /v1/nimble/systemone:
+    post:
+      summary: Systemone
+      operationId: nimble_system_one
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              title: Payload
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - BearerAuthorization: []
+      - LegacyApiKey: []
+      tags:
+      - Nimble
+components:
+  schemas:
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+  securitySchemes:
+    BearerAuthorization:
+      type: apiKey
+      in: header
+      name: Authorization
+    LegacyApiKey:
+      type: apiKey
+      in: header
+      name: api_key

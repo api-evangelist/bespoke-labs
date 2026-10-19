@@ -1,0 +1,12 @@
+{
+ "url": "https://api.bespokelabs.ai/openapi.json",
+ "final": "https://api.bespokelabs.ai/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 6909,
+ "sha256": "0d7869ee36cd35305bdb9f482d8d34cb4d9e16d60613c72da5e85a671717ea0a",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "re-archived: the provider's current document replaced a stale archive (roadmap#793); the old files are in openapi/_superseded/2026-10-19-stale"
+}
