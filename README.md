@@ -64,6 +64,117 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bespoke Labs is a company surfaced as a portfolio company of 8vc, mayfield, wing-venture-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Bespoke Labs is an applied AI research lab building environment infrastructure, data curation, and evaluation tooling for AI agents and post-training. Its open-source Bespoke Curator library generates high-quality synthetic data at scale for model finetuning and structured extraction, and its Bespoke MiniCheck ("Argus") API offers a lightweight grounded-factuality / hallucination-detection service that scores whether a claim is supported by a given context. The lab is also known for OpenThoughts reasoning datasets, Terminal-Bench, the GEPA prompt optimizer, MiniChart, and OpenThinker. Backed by 8VC, Mayfield, and Wing Venture Capital.
 
-Backed by: 8vc, mayfield, wing-venture-capital — https://bespokelabs.ai
+**Areas:** Company · Artificial Intelligence · Machine Learning · LLM · Synthetic Data · Data Curation · Fact Checking · Hallucination Detection · AI Agents · Evaluation
+
+## Bespoke Labs on APIs.io
+
+Everything profiled for Bespoke Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bespoke-labs/](https://apis.io/providers/bespoke-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Bespoke Labs Minicheck API](https://apis.io/apis/bespoke-labs/bespoke-labs-minicheck-api/) — The Minicheck API from Bespoke Labs — 1 operation(s) for minicheck.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [bespoke-labs](https://apis.io/servers/bespoke-labs/bespoke-labs/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Bespoke Labs Agentic Access](https://apis.io/agentic-access/bespoke-labs/bespoke-labs-agentic-access/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Argus Minicheck API](https://apis.io/collections/bespoke-labs/open-bespoke-labs-minicheck-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Bespoke Labs Minicheck Overlay](https://apis.io/overlays/bespoke-labs/bespoke-labs-minicheck-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bespoke Labs Authentication](https://apis.io/security/bespoke-labs/bespoke-labs-authentication/)
+- [Bespoke Labs Domain Security](https://apis.io/security/bespoke-labs/bespoke-labs-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bespokelabs.ai)
+- [Documentation](https://docs.bespokelabs.ai)
+- [Getting started](https://docs.bespokelabs.ai/bespoke-curator/getting-started)
+- [API reference](https://docs.bespokelabs.ai/models/bespoke-minicheck/api)
+- [Sign up](https://console.bespokelabs.ai)
+- [Support](https://bespokelabs.ai/contact)
+- [Blog](https://bespokelabs.ai/blog)
+- [Terms of service](https://bespokelabs.ai/legal/terms-of-use)
+- [Privacy policy](https://bespokelabs.ai/legal/privacy-policy)
+- [GitHub](https://github.com/bespokelabsai)
+
+## API Evangelist rating
+
+**Kin Score 38.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 40.4 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 66.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 18.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bespoke-labs/](https://apis.io/providers/bespoke-labs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bespoke Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bespoke-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
